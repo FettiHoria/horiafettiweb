@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/horiafettiweb/static/css/main.465940ec.css",
+    "main.js": "/horiafettiweb/static/js/main.bc1eb6af.js",
+    "static/js/787.a646d892.chunk.js": "/horiafettiweb/static/js/787.a646d892.chunk.js",
+    "index.html": "/horiafettiweb/index.html",
+    "main.465940ec.css.map": "/horiafettiweb/static/css/main.465940ec.css.map",
+    "main.bc1eb6af.js.map": "/horiafettiweb/static/js/main.bc1eb6af.js.map",
+    "787.a646d892.chunk.js.map": "/horiafettiweb/static/js/787.a646d892.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.465940ec.css",
+    "static/js/main.bc1eb6af.js"
+  ]
+}
