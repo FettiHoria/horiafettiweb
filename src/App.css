@@ -1,5 +1,11 @@
 .App {
   display: flex;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.App.menu-open {
+  margin-left: -180px; /* Lățimea meniului */
 }
 
 * {
@@ -11,9 +17,8 @@
 
 background-color: aliceblue;
   
-  width: 30vh;
-  height: 40vh;
-  padding-left: 25px;
+  width: 170px;
+  padding-left: 10px;
   padding-top: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -38,7 +43,7 @@ background-color: aliceblue;
       
       display: block;
       
-      width: 250px;
+      width: 120px;
       
       background: white;
       
@@ -69,5 +74,79 @@ background-color: aliceblue;
 
         .content {
           flex: 1;
-          padding: 20px;
+          padding: 50px;
+          text-align: center;
         }
+
+        .contentText{
+          text-align: left;
+          padding-left: 200px;
+          padding-right: 200px;
+        }
+
+        ul.contentText{
+          padding-left: 100px;
+        }
+
+
+
+        /* Stil pentru lista de proiecte IoT */
+.Article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.Article ul {
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+.Article li {
+  margin: 20px;
+  padding: 20px;
+  width: 800px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+}
+
+.Article li:hover {
+  transform: translateY(-5px);
+}
+
+.Article a {
+  display: flex;
+  text-decoration: none;
+  color: #333;
+  flex: 1;
+}
+
+.Article img {
+  width: 150px;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.Article .info {
+  flex: 3;
+}
+
+.Article h3 {
+  margin: 0 0 10px 0;
+  font-size: 20px;
+}
+
+.Article p {
+  margin: 0;
+  font-size: 16px;
+  color: #777;
+}
+
+

@@ -5,7 +5,7 @@ const Evolution = () => {
 
 
     return (
-        <div>  
+        <div className='content'>  
                     Evolution
         </div>
 
