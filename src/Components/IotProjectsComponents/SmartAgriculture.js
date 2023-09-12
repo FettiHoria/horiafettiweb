@@ -36,7 +36,9 @@ const SmartAgriculture = () => {
 
     return (
         <div className='content'>  
+        <center>
             <h1>Plant monitoring project</h1>
+            </center>
             <br></br><br></br>
             <div className='contentText'>
        &nbsp; &nbsp; &nbsp; &nbsp; 
@@ -50,7 +52,7 @@ Plants' humidity requirements vary depending on their natural habitat, and by mo
 </div>
 
 
-            <img src={SA1}  width="50%"></img>
+            <img src={SA1} style={{ maxWidth: '100%', height: 'auto' }}></img>
             <br></br><br></br>
             <div className='contentText'>
             &nbsp; &nbsp; &nbsp; &nbsp;           
@@ -66,7 +68,7 @@ The monitoring system is the physical component that is placed on the ground. Th
 </ul>
 <br></br><br></br>
 <center>
-<img src={SA2}  width="50%"></img></center>
+<img src={SA2} style={{ maxWidth: '100%', height: 'auto' }}></img></center>
             <br></br><br></br>
             {/* &nbsp; &nbsp; &nbsp; &nbsp; 
         The web application and the database are local for now. I work hard to deploy them on this domain, but first i want to implement some improvments. Just for demonstration I will let you a backup video will all the functionalities.

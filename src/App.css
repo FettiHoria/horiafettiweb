@@ -1,11 +1,22 @@
 .App {
+  background-color: #553f5e;
   display: flex;
-  overflow: hidden;
+  overflow: auto;
   transition: all 0.3s ease;
+  min-height: 100%;
 }
 
+
+.menu-button{
+  background-image: url("/public/3linii.png");
+  border: none;
+  height: 40px;
+  width: 40px;
+}
+
+
 .App.menu-open {
-  margin-left: -180px; /* Lățimea meniului */
+  margin-left: -160px; /* Lățimea meniului */
 }
 
 * {
@@ -15,9 +26,10 @@
 
 .vertical-nav {
 
-background-color: aliceblue;
+background-color: #553f5e;
   
   width: 170px;
+  height: 260px;
   padding-left: 10px;
   padding-top: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -45,13 +57,13 @@ background-color: aliceblue;
       
       width: 120px;
       
-      background: white;
+      background: rgb(222, 207, 228);
       
       color: black;
       
-      box-shadow: 2px 2px 2px cadetblue;
+      box-shadow: 2px 2px 2px rgb(91, 46, 100);
       
-      border-radius: 8px;
+      border-radius: 0px;
       
       margin: 5px;
       
@@ -62,7 +74,7 @@ background-color: aliceblue;
 
       .vertical-nav ul li a:hover {
 
-        background-color: rgb(142, 175, 237);
+
         
         color: white;
         
@@ -73,15 +85,19 @@ background-color: aliceblue;
         }
 
         .content {
-          flex: 1;
-          padding: 50px;
-          text-align: center;
+          background-color: #ffffff;
+          padding: 25px;
+          text-align: left;
+
+          margin-left:25%;
+          margin-right: 25%;
+          min-height : 100vh
+          
         }
 
         .contentText{
           text-align: left;
-          padding-left: 200px;
-          padding-right: 200px;
+
         }
 
         ul.contentText{
@@ -108,7 +124,7 @@ background-color: aliceblue;
 .Article li {
   margin: 20px;
   padding: 20px;
-  width: 800px;
+  width: 75%;
   border: 1px solid #ddd;
   border-radius: 5px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
@@ -129,7 +145,8 @@ background-color: aliceblue;
 }
 
 .Article img {
-  width: 150px;
+  width: 30%;
+  height: fit-content;
   border-radius: 5px;
   margin-right: 20px;
 }
@@ -149,4 +166,39 @@ background-color: aliceblue;
   color: #777;
 }
 
+@media screen and (max-width: 800px){
+  .content{
+      /* padding-left:5%;   
+      padding-right:5%; */
+      margin-left:5%;
+      margin-right:5%;
+  }
+}
 
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.footer {
+  width: 100%;
+  background-color: rgb(84, 35, 99);
+  color: white;
+  text-align: center;
+}
+
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+}
+.grid-item {
+  border: 0px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
